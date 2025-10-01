@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Imc.Gui.MainPage"
+             Title="Indice de masa corporal"
+             Shell.TitleColor="White"
+             Shell.BackgroundColor="#512BD4">
+
+    <VerticalStackLayout
+        Margin="24"
+        Padding="16"
+        Spacing="24">
+
+        <Border
+            Stroke="LightGray"
+            Padding="16">
+          
+            <VerticalStackLayout
+                Spacing="4">
+
+                <Label Text="Peso en kilogramos:"
+                       FontSize="Small"/>
+                <Entry 
+                    FontSize="Small"/>
+                <Label Text="Estatura en metros:"
+                       FontSize="Small"/>
+                <Entry 
+                    FontSize="Small"/>
+
+            </VerticalStackLayout>
+        </Border>
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Spacing="36">
+
+            <Button Text="Calcular"/>
+            <Button Text="Limpiar"/>
+
+        </HorizontalStackLayout>
+
+        <Border
+             Stroke="LightGray"
+             Padding="16">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"/>
+            </Border.StrokeShape>
+
+            <VerticalStackLayout
+                Spacing="4">
+
+                <Label Text="El indice de mase corporal de la persona es:"
+                       FontSize="Small"/>
+                <Label Text="24.1234"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+                <Label Text="La situacion nutricional de la persona es:"
+                       FontSize="Small"/>
+                <Label Text="peso normal"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+
+            </VerticalStackLayout>
+        </Border>
+        
+
+    </VerticalStackLayout>
+
+</ContentPage>
