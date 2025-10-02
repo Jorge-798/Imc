@@ -14,18 +14,20 @@
         <Border
             Stroke="LightGray"
             Padding="16">
-          
+
             <VerticalStackLayout
                 Spacing="4">
 
                 <Label Text="Peso en kilogramos:"
                        FontSize="Small"/>
                 <Entry 
-                    FontSize="Small"/>
+                    FontSize="Small"
+                    x:Name="PesoEntry"/>
                 <Label Text="Estatura en metros:"
                        FontSize="Small"/>
                 <Entry 
-                    FontSize="Small"/>
+                    FontSize="Small"
+                    x:Name="EstaturaEntry"/>
 
             </VerticalStackLayout>
         </Border>
@@ -34,8 +36,12 @@
             HorizontalOptions="Center"
             Spacing="36">
 
-            <Button Text="Calcular"/>
-            <Button Text="Limpiar"/>
+            <Button Text="Calcular"
+                    FontSize="Small"
+                    Clicked="Calcular_Button_Clicked"/>
+            <Button Text="Limpiar"
+                    FontSize="Small"
+                    Clicked="Limpiar_Button_Clicked"/>
 
         </HorizontalStackLayout>
 
@@ -55,17 +61,19 @@
                 <Label Text="24.1234"
                        FontSize="Medium"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       x:Name="ImcLabel"/>
                 <Label Text="La situacion nutricional de la persona es:"
                        FontSize="Small"/>
                 <Label Text="peso normal"
                        FontSize="Medium"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       x:Name="SituacionNutricionalLabel"/>
 
             </VerticalStackLayout>
         </Border>
-        
+
 
     </VerticalStackLayout>
 
